@@ -15,7 +15,7 @@ Depending on these events you should grant/revoke/extend user's access to the pr
 
 This is the payload that your webhook endpoint is going to receive. There can be additional fields in the payload, you can ignore those.
 
-```json
+```js
 {
     "token": "xxx-yyy-zzz",
     "action": "initial",

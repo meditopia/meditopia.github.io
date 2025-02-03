@@ -15,19 +15,24 @@ Token can have special characters in it. Therefore, you should encode the token 
 
 > GET https://partners.meditopia.com/default/v1/user-check?token=xxx-yyy
 
+---
+
 **Headers**
 
-The Bearer Token in the request will be shared with you.
+?> The Bearer Token in the request will be shared with you.
 
-```json
+```js
 {
     "Content-Type": "application/json",
     "Authorization": "Bearer <TOKEN>"
 }
 ```
 
+---
+
 **Sucessfull response ( Status Code: 200 )**
-```json
+
+```js
 {
     "success": true,
     "data": {
@@ -50,8 +55,11 @@ The Bearer Token in the request will be shared with you.
 * `latest_action` : The latest action of the user.
 * `latest_action_date` : The timestamp of the latest action of the user.
 
+---
+
 **Error response ( Status Code: 401, 404, 422 )**
-```json
+
+```js
 {
     "success": false,
     "errors": [

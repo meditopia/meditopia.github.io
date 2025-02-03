@@ -16,19 +16,23 @@ We recommend sending these events on scheduled intervals.
 **URL**
 > POST https://partners.meditopia.com/default/v1/events
 
+---
+
 **Headers**
 
-The Bearer Token in the request will be shared with you.
+?> The Bearer Token in the request will be shared with you.
 
-```json
+```js
 {
     "Content-Type": "application/json",
     "Authorization": "Bearer <TOKEN>"
 }
 ```
 
+---
+
 **Request Body**
-```json
+```js
 {
     "events": [
         {
@@ -60,11 +64,15 @@ The Bearer Token in the request will be shared with you.
 * `event_value`: Additional info about the event. If not exist just send `null`.
 * `received_at`: Timestamp of the event.
 
+---
 
 **Sucessfull response ( Status Code: 204 )**
+
 ```json
 204 - No Content
 ```
+
+---
 
 **Error response ( Status Code: 401, 404, 422 )**
 
@@ -73,7 +81,7 @@ Error codes:
 * `A_1002` : Invalid Bearer Token.
 * `A_1004` : Invalid IP Address. Check your server's IP and the ones you send us.
 
-```json
+```js
 {
     "success": false,
     "errors": [

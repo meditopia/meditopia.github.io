@@ -1,0 +1,7 @@
+\.idea
+\node_modules
+\dist
+*.bat
+.env
+\logs
+\coverage

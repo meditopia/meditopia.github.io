@@ -8,11 +8,6 @@ It can be useful when you are not sure whether current state of the given user i
 ### Request
 
 **URL**
-
-Token can have special characters in it. Therefore, you should encode the token before appending it to the URL. Check following how to do it:
-* [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
-* [GO](https://pkg.go.dev/net/url#example-QueryEscape)
-
 > GET https://partners.meditopia.com/default/v1/user-check?token=xxx-yyy
 
 ---

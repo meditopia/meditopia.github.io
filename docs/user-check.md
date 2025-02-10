@@ -31,24 +31,24 @@ It can be useful when you are not sure whether current state of the given user i
 {
     "success": true,
     "data": {
-        "user_status": "active",
+        "userStatus": "inactive",
+        "latestAction": "canceled",
+        "latestActionDate": "2025-02-07T22:16:40.144Z",
         "country": "tr",
-        "plan_type": "YEARLY01",
-        "partner_user_id": "test-3rdparty-user-id",
-        "latest_action": "audio",
-        "latest_action_date": "2025-01-01T00:00:00Z"
+        "planType": "YEARLYTEST008",
+        "partnerUserID": "damdam"
     }
 }
 ```
 
-* `user_status` : Represents the current user state. Can be one of following:
+* `userStatus` : Represents the current user state. Can be one of following:
   * `active`
   * `inactive`
 * `country` : Country of the user.
-* `plan_type` : The subscription plan.
-* `partner_user_id` : The unique ID of the user in your application.
-* `latest_action` : The latest action of the user.
-* `latest_action_date` : The timestamp of the latest action of the user.
+* `planType` : The subscription plan.
+* `partnerUserID` : The unique ID of the user in your application.
+* `latestAction` : The latest action of the user.
+* `latestActionDate` : The timestamp of the latest action of the user.
 
 ---
 

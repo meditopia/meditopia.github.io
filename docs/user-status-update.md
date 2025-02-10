@@ -19,9 +19,9 @@ This is the payload that your webhook endpoint is going to receive. There can be
 {
     "token": "xxx-yyy-zzz",
     "action": "initial",
-    "partner_id": "partner-123",
+    "partnerID": "partner-123",
     "country": "tr",
-    "plan_type": "premiumYearly",
+    "planType": "premiumYearly",
 }
 ```
 
@@ -31,10 +31,10 @@ This is the payload that your webhook endpoint is going to receive. There can be
   * `renewed` : User renewed their subscription.
   * `canceled` : User canceled their subscription.
   * `reactivated` : User reactivated their subscription.
-  * `plan_type_changed` : User changed the type of subscription plan.
-* `partner_id` : The unique ID of your application.
+  * `planTypeChanged` : User changed the type of subscription plan.
+* `partnerID` : The unique ID of your application.
 * `country` : Country of the user.
-* `plan_type` : The subscription plan.
+* `planType` : The subscription plan.
 
 
 ### Implementation Guide

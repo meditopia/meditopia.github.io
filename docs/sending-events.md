@@ -36,33 +36,40 @@ We recommend sending these events on scheduled intervals.
 {
     "events": [
         {
-            "token": "user-token-1",
-            "partner_user_id": "user-1",
-            "event": "video",
-            "event_value": null,
-            "received_at": "2024-08-06 15:04:05"
+            "token": "Ul862KQgtqyWMekaDDfziZWUG70UkSdyO1SUKUVAlvcH4RMWZlriOS6re1AgTkTgo13_J4IJtmMBUNp7z10TSo4sjJOW1AJfwIZ3XcMZYoT05dZiChtJ-A3-6P3ZcX8nrz-2LMDBMNkALnWrlxAhaiNPEZM",
+            "partnerUserID": "partner-test-id-1",
+            "event": "register",
+            "eventValue": "test_val",
+            "receivedAt": "2024-01-02 15:04:05"
         },
         {
-            "token": "user-token-2",
-            "partner_user_id": "user-2",
+            "token": "Ul862KQgtqyWMekaDDfziZWUG70UkSdyO1SUKUVAlvcH4RMWZlriOS6re1AgTkTgo13_J4IJtmMBUNp7z10TSo4sjJOW1AJfwIZ3XcMZYoT05dZiChtJ-A3-6P3ZcX8nrz-2LMDBMNkALnWrlxAhaiNPEZM",
+            "partnerUserID": "partner-test-id-1",
             "event": "audio",
-            "event_value": null,
-            "received_at": "2024-08-06 15:04:05"
+            "eventValue": null,
+            "receivedAt": "2024-01-03 10:10:10"
+        },
+        {
+            "token": "PeGxEkupo5cEZ3AJahPmmufqONGrlGyWd9_Us7ODyHLFI5hs-2NtM7dOAHskJQe2Bmw9IFqXnwy33G9zUMsCUOxFdmo8TAwV2iPdscYxiMCV8g59UOXAyRnKUECGxp2xgj1EPxVV35h5WmLkTj5-FnRsqqDm54c",
+            "partnerUserID": "partner-test-id-2",
+            "event": "register",
+            "eventValue": "test_val4",
+            "receivedAt": "2024-02-03 10:10:10"
         }
     ]
 }
 ```
 
 * `token`: Unique user token that performed the event.
-* `partner_user_id`: Unique ID of the user in your application.
+* `partnerUserID`: Unique ID of the user in your application.
 * `event`: The performed event in your application. Could be one of the following:
   * `register`: User registered.
   * `signin`: User signed-in.
   * `audio`: User consumed a audio content.
   * `video`: User consumed a video content.
   * `content`: User consumed a content other than audio or video.
-* `event_value`: Additional info about the event. If not exist just send `null`.
-* `received_at`: Timestamp of the event.
+* `eventValue`: Additional info about the event. If not exist just send `null`.
+* `receivedAt`: Timestamp of the event.
 
 ---
 

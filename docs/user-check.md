@@ -33,10 +33,14 @@ It can be useful when you are not sure whether current state of the given user i
     "data": {
         "userStatus": "inactive",
         "latestAction": "canceled",
-        "latestActionDate": "2025-02-07T22:16:40.144Z",
+        "latestActionDate": "2025-02-07 22:16:40",
         "country": "tr",
         "planType": "YEARLYTEST008",
-        "partnerUserID": "damdam"
+        "partnerUserID": "xx-yy-zz",
+        "subStartDate": "2025-02-17 13:22:25",
+        "subEndDate": "2026-02-17 13:22:25",
+        "subStartDateMs": "1739798545534",
+        "subEndDateMs": "1771334545534"
     }
 }
 ```
@@ -49,6 +53,10 @@ It can be useful when you are not sure whether current state of the given user i
 * `partnerUserID` : The unique ID of the user in your application.
 * `latestAction` : The latest action of the user.
 * `latestActionDate` : The timestamp of the latest action of the user.
+* `subStartDate` : UTC start date of the subscription in `YYYY-MM-DD HH:MM:SS` format.
+* `subEndDate` : UTC end date of the subscription in `YYYY-MM-DD HH:MM:SS` format.
+* `subStartDateMs` : Millisecond Unix timestamp of subscription start date.
+* `subEndDateMs` : Millisecond Unix timestamp of subscription end date.
 
 ---
 

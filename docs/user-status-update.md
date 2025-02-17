@@ -22,6 +22,10 @@ This is the payload that your webhook endpoint is going to receive. There can be
     "partnerID": "partner-123",
     "country": "tr",
     "planType": "premiumYearly",
+    "subStartDate": "2025-02-17 13:22:25",
+    "subEndDate": "2026-02-17 13:22:25",
+    "subStartDateMs": "1739798545534",
+    "subEndDateMs": "1771334545534"
 }
 ```
 
@@ -35,7 +39,10 @@ This is the payload that your webhook endpoint is going to receive. There can be
 * `partnerID` : The unique ID of your application.
 * `country` : Country of the user.
 * `planType` : The subscription plan.
-
+* `subStartDate` : UTC start date of the subscription in `YYYY-MM-DD HH:MM:SS` format.
+* `subEndDate` : UTC end date of the subscription in `YYYY-MM-DD HH:MM:SS` format.
+* `subStartDateMs` : Millisecond Unix timestamp of subscription start date.
+* `subEndDateMs` : Millisecond Unix timestamp of subscription end date.
 
 ### Implementation Guide
 When a user wants to use your application through Meditopia, following will happen in order.
